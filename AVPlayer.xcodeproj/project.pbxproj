@@ -16,7 +16,9 @@
 		B762B2D927404FF500506ABC /* JTAVPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762B2D827404FF500506ABC /* JTAVPlayerController.swift */; };
 		B762B2DB27405E4700506ABC /* JTAVPlayerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762B2DA27405E4700506ABC /* JTAVPlayerLayer.swift */; };
 		B762B2DD2742CD1600506ABC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B762B2DC2742CD1500506ABC /* README.md */; };
-		B762B2E02742DE3D00506ABC /* JTAVPlayerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762B2DF2742DE3D00506ABC /* JTAVPlayerContext.swift */; };
+		B767E9162743F70D00FDCDAB /* InitState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B767E9152743F70D00FDCDAB /* InitState.swift */; };
+		B767E9192743F9E800FDCDAB /* PlayerCommandsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B767E9182743F9E800FDCDAB /* PlayerCommandsProtocol.swift */; };
+		B767E91B2743FA9A00FDCDAB /* PlayerStateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B767E91A2743FA9A00FDCDAB /* PlayerStateProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		B762B2DA27405E4700506ABC /* JTAVPlayerLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTAVPlayerLayer.swift; sourceTree = "<group>"; };
 		B762B2DC2742CD1500506ABC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B762B2DF2742DE3D00506ABC /* JTAVPlayerContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTAVPlayerContext.swift; sourceTree = "<group>"; };
+		B767E9152743F70D00FDCDAB /* InitState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitState.swift; sourceTree = "<group>"; };
+		B767E9182743F9E800FDCDAB /* PlayerCommandsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCommandsProtocol.swift; sourceTree = "<group>"; };
+		B767E91A2743FA9A00FDCDAB /* PlayerStateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStateProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +85,30 @@
 		B762B2D727404FC300506ABC /* Player Configurations */ = {
 			isa = PBXGroup;
 			children = (
+				B767E9172743F9D200FDCDAB /* Protocols */,
+				B767E9142743F6C400FDCDAB /* StateService */,
 				B762B2D827404FF500506ABC /* JTAVPlayerController.swift */,
 				B762B2DF2742DE3D00506ABC /* JTAVPlayerContext.swift */,
 				B762B2DA27405E4700506ABC /* JTAVPlayerLayer.swift */,
 			);
 			path = "Player Configurations";
+			sourceTree = "<group>";
+		};
+		B767E9142743F6C400FDCDAB /* StateService */ = {
+			isa = PBXGroup;
+			children = (
+				B767E9152743F70D00FDCDAB /* InitState.swift */,
+			);
+			path = StateService;
+			sourceTree = "<group>";
+		};
+		B767E9172743F9D200FDCDAB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B767E9182743F9E800FDCDAB /* PlayerCommandsProtocol.swift */,
+				B767E91A2743FA9A00FDCDAB /* PlayerStateProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +184,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B762B2C827403D3100506ABC /* ViewController.swift in Sources */,
+				B767E9162743F70D00FDCDAB /* InitState.swift in Sources */,
 				B762B2DB27405E4700506ABC /* JTAVPlayerLayer.swift in Sources */,
+				B767E9192743F9E800FDCDAB /* PlayerCommandsProtocol.swift in Sources */,
+				B767E91B2743FA9A00FDCDAB /* PlayerStateProtocol.swift in Sources */,
 				B762B2D927404FF500506ABC /* JTAVPlayerController.swift in Sources */,
 				B762B2C427403D3100506ABC /* AppDelegate.swift in Sources */,
 				B762B2C627403D3100506ABC /* SceneDelegate.swift in Sources */,
-				B762B2E02742DE3D00506ABC /* JTAVPlayerContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

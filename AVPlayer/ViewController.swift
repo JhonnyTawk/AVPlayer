@@ -10,13 +10,17 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    var playerController: JTAVPlayerController?
+    private var playerController: JTAVPlayerController?
     
     @IBOutlet weak var contentView: UIView!
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         playerController = JTAVPlayerController(containerView: self.contentView)
+        
+        
     }
 }
-
+//Configurations
+//Load (URL)

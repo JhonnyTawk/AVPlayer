@@ -31,21 +31,17 @@ public final class JTAVPlayerController: NSObject {
         
     }
     
+    func load(url: String) {
+        
+    }
     
     
     func preparePlayer(containerView: UIView) {
         
         let videoURL = URL(string: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8")
         let player = AVPlayer(url: videoURL!)
-        
-//        let playerLayer  = JTAVPlayerLayer()
-//        playerLayer.playerLayer.player = player
-        
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = containerView.bounds
-//        playerLayer.insertSubview(containerView, at: 0)
-        
-//        playerLayer.addSubview(containerView)
         containerView.layer.addSublayer(playerLayer)
         player.play()
         
