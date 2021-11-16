@@ -6,14 +6,17 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    var playerController: JTAVPlayerController?
+    
+    @IBOutlet weak var contentView: UIView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        playerController = JTAVPlayerController(containerView: self.contentView)
     }
-
-
 }
 

@@ -13,6 +13,10 @@
 		B762B2CB27403D3100506ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B762B2C927403D3100506ABC /* Main.storyboard */; };
 		B762B2CD27403D3300506ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B762B2CC27403D3300506ABC /* Assets.xcassets */; };
 		B762B2D027403D3300506ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B762B2CE27403D3300506ABC /* LaunchScreen.storyboard */; };
+		B762B2D927404FF500506ABC /* JTAVPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762B2D827404FF500506ABC /* JTAVPlayerController.swift */; };
+		B762B2DB27405E4700506ABC /* JTAVPlayerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762B2DA27405E4700506ABC /* JTAVPlayerLayer.swift */; };
+		B762B2DD2742CD1600506ABC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B762B2DC2742CD1500506ABC /* README.md */; };
+		B762B2E02742DE3D00506ABC /* JTAVPlayerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762B2DF2742DE3D00506ABC /* JTAVPlayerContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B762B2CC27403D3300506ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B762B2CF27403D3300506ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B762B2D127403D3300506ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B762B2D827404FF500506ABC /* JTAVPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTAVPlayerController.swift; sourceTree = "<group>"; };
+		B762B2DA27405E4700506ABC /* JTAVPlayerLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTAVPlayerLayer.swift; sourceTree = "<group>"; };
+		B762B2DC2742CD1500506ABC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B762B2DF2742DE3D00506ABC /* JTAVPlayerContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTAVPlayerContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		B762B2B727403D3100506ABC = {
 			isa = PBXGroup;
 			children = (
+				B762B2DC2742CD1500506ABC /* README.md */,
 				B762B2C227403D3100506ABC /* AVPlayer */,
 				B762B2C127403D3100506ABC /* Products */,
 			);
@@ -56,6 +65,7 @@
 		B762B2C227403D3100506ABC /* AVPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				B762B2D727404FC300506ABC /* Player Configurations */,
 				B762B2C327403D3100506ABC /* AppDelegate.swift */,
 				B762B2C527403D3100506ABC /* SceneDelegate.swift */,
 				B762B2C727403D3100506ABC /* ViewController.swift */,
@@ -65,6 +75,16 @@
 				B762B2D127403D3300506ABC /* Info.plist */,
 			);
 			path = AVPlayer;
+			sourceTree = "<group>";
+		};
+		B762B2D727404FC300506ABC /* Player Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				B762B2D827404FF500506ABC /* JTAVPlayerController.swift */,
+				B762B2DF2742DE3D00506ABC /* JTAVPlayerContext.swift */,
+				B762B2DA27405E4700506ABC /* JTAVPlayerLayer.swift */,
+			);
+			path = "Player Configurations";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +147,7 @@
 			files = (
 				B762B2D027403D3300506ABC /* LaunchScreen.storyboard in Resources */,
 				B762B2CD27403D3300506ABC /* Assets.xcassets in Resources */,
+				B762B2DD2742CD1600506ABC /* README.md in Resources */,
 				B762B2CB27403D3100506ABC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B762B2C827403D3100506ABC /* ViewController.swift in Sources */,
+				B762B2DB27405E4700506ABC /* JTAVPlayerLayer.swift in Sources */,
+				B762B2D927404FF500506ABC /* JTAVPlayerController.swift in Sources */,
 				B762B2C427403D3100506ABC /* AppDelegate.swift in Sources */,
 				B762B2C627403D3100506ABC /* SceneDelegate.swift in Sources */,
+				B762B2E02742DE3D00506ABC /* JTAVPlayerContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
